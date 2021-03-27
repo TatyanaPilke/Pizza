@@ -1,0 +1,146 @@
+.header {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background-color: #111111;
+    opacity: 0.7;
+  }
+
+  &__inner {
+    margin: 0 20px;
+    position: relative;
+    z-index: 2;
+    padding: 20px 0 160px;
+  }
+
+  &__logo {
+    width: 180px;
+    height: 80px;
+  }
+
+  &__order {
+    color: $white;
+    font-size: 18px;
+    padding: 14px 45px;
+    margin-right: 20px;
+    border: 2px solid $white;
+    @include m500;
+    @include transition-bg;
+
+    &:hover {
+      background-color: $white;
+      color: $text;
+      box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.2);
+    }
+  }
+
+  &__title-content {
+    text-align: center;
+    margin-top: 180px;
+    z-index: 3;
+  }
+
+  &__txt {
+    color: $yellow;
+    font-size: 26px;
+    font-family: 'Pacifico';
+    padding: 10px 30px;
+    background-color: rgba(255, 255, 255, 0.57);
+    margin-bottom: 35px;
+  }
+
+  &__title {
+    font-family: 'Rye', sans-serif;
+    text-transform: uppercase;
+    font-size: 96px;
+    color: $white;
+    margin-bottom: 15px;
+  }
+
+  &__subtitle {
+    font-family: 'Arizonia';
+    font-size: 64px;
+    color: $white;
+    margin: 0 0 100px;
+    position: relative;
+    display: inline-block;
+
+    &:after,
+    &:before {
+      content: "";
+      position: absolute;
+      background-image: url(../images/icon/rhombus.png);
+      background-repeat: no-repeat;
+      width: 42px;
+      height: 42px;
+      top: 25px;
+    }
+
+    &:before {
+      left: -80px;
+    }
+
+    &:after {
+      right: -80px;
+    }
+  }
+
+  &__magnifier {
+    position: relative;
+    border: transparent;
+    background-color: transparent;
+    padding: 10px;
+    outline: transparent;
+    margin-right: 10px;
+    color: $white;
+    font-size: 20px;
+
+    &:hover {
+      color: $yellow;
+    }
+  }
+
+
+  &__btn {
+    display: block;
+    max-width: 260px;
+    font-size: 22px;
+    margin: 0 auto;
+    color: $black;
+    @include m500;
+  }
+
+  .menu {
+
+    &__list {
+      margin: 0;
+    }
+
+    &__item {
+      text-transform: uppercase;
+      display: inline-block;
+      margin-right: 40px;
+    }
+
+    &__link {
+      color: $white;
+      @include b700;
+      @include transition;
+
+      &:hover {
+        color: $yellow;
+      }
+    }
+  }
+}

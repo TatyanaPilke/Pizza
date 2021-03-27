@@ -3,3 +3,23 @@
     @content; 
   } 
 }
+
+@mixin b700 {
+  font-weight: 700;
+} 
+
+@mixin m500 {
+  font-weight: 500;
+}
+
+@mixin r400 {
+  font-weight: 400;
+}
+
+@mixin transition {
+  transition: color 0.3s ease;
+}
+
+@mixin transition-bg {
+  transition: background-color 0.5s ease;
+}

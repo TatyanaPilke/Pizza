@@ -19,8 +19,9 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.4;
+  color: $black;
   background-color: $white;
   min-width: 320px;
   overflow-x: hidden;
@@ -38,7 +39,7 @@ body {
 }
 
 .container {
-  max-width: 1265px;
+  max-width: 1300px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -78,5 +79,12 @@ ul {
 
 .btn {
   font-size: 24px;
+  background-color: $yellow;
+  padding: 15px 30px;
+  border-radius: 5px;
+
+  &:hover {
+    opacity: 0.6;
+  }
 }
 
