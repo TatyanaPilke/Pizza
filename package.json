@@ -19,6 +19,8 @@
     "gulp-sass": "^4.1.0",
     "gulp-uglify": "^3.0.2",
     "magnific-popup": "^1.1.0",
-    "normalize.css": "^8.0.1"
-  }
+    "normalize.css": "^8.0.1",
+    "swiper": "^6.5.0"
+  },
+  "dependencies": {}
 }

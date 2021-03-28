@@ -88,3 +88,15 @@ ul {
   }
 }
 
+.title {
+  text-align: center;
+  font-family: 'Pacifico';
+  font-size: 48px;
+  text-transform: capitalize;
+  color: $text;
+}
+
+.title-yellow {
+  color: $yellow;
+}
+

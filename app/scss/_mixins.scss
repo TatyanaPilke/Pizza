@@ -23,3 +23,9 @@
 @mixin transition-bg {
   transition: background-color 0.5s ease;
 }
+
+@mixin font-pacifico{
+  font-family: 'Pacifico';
+  font-size: 20px;
+  color: $yellow;
+}
