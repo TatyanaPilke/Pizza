@@ -91,7 +91,7 @@ ul {
 .title {
   text-align: center;
   font-family: 'Pacifico';
-  font-size: 48px;
+  font-size: calc(36px + 12 * ((100vw - 320px) / (1280 - 320)));
   text-transform: capitalize;
   color: $text;
   margin: 0;

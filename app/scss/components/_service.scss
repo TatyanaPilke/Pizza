@@ -1,6 +1,18 @@
 .service {
   background-color: $white;
   padding: 80px 0 90px;
+  position: relative;
+  z-index: 2;
+
+  &__span {
+    position: absolute;
+    top: -250px;
+    padding: 0;
+    font-size: calc(200px + 600 * ((100vw - 320px) / (1920 - 320)));
+    transform: rotate(-15deg);
+    z-index: 1;
+    opacity: 0.05;
+  }
 
   &__text {
     color: $text;
@@ -10,7 +22,7 @@
   }
 
   &__box {
-    max-width: 300px;
+    max-width: 270px;
     padding-top: 140px;
     margin-right: 40px;
     background-repeat: no-repeat;
