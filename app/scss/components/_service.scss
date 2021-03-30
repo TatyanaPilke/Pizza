@@ -1,0 +1,48 @@
+.service {
+  background-color: $white;
+  padding: 80px 0 90px;
+
+  &__text {
+    color: $text;
+    max-width: 1100px;
+    margin: 30px auto 60px;
+    @include text;
+  }
+
+  &__box {
+    max-width: 300px;
+    padding-top: 140px;
+    margin-right: 40px;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 94px 109px;
+
+    &--launch {
+      background-size: 172px 120px;
+    }
+
+    &--dinner1 {
+      background-size: 96px 81px;
+      background-position: center 20px;
+    }
+
+    &--dinner2 {
+      background-size: 61px 58px;
+      background-position: center 30px;
+    }
+  }
+
+  &__meal {
+    @include font-pacifico;
+    display: block;
+    text-align: center;
+    font-size: 36px;
+  }
+
+  &__text-md {
+    font-family: 'Pacifico', sans-serif;
+    font-size: 18px;
+    color: $black;
+    line-height: 32px;
+  }
+}
