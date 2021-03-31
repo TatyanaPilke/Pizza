@@ -1,0 +1,48 @@
+.pizza {
+  background-color: $text;
+  padding: 100px 0 80px;
+
+  &__title {
+    color: $white;
+  }
+
+  &__inner {
+    margin: 65px 0 80px;
+  }
+
+  &__list {
+    max-width: 570px;
+    margin-right: 130px;
+    color: $white;
+    @include zerroPadding;
+
+    &--right {
+      margin-right: 0;
+    }
+  }
+
+  &__item {
+    margin-bottom: 38px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__name {
+    @include fontPacifico;
+    margin-bottom: 10px;
+  }
+
+  &__ingredient {
+    font-size: 16px;
+    padding-right: 20px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  &__button {
+    text-align: center;
+  }
+}

@@ -111,13 +111,14 @@
     }
   }
 
-  &__btn {
-    display: block;
-    max-width: 260px;
-    font-size: 22px;
-    margin: 0 auto;
-    color: $black;
-    @include m500;
+  // &__btn {
+  //   display: block;
+  //   max-width: 260px;
+  //   @include m500;
+  // }
+
+  &__button {
+    text-align: center;
   }
 
   .menu {
