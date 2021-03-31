@@ -111,14 +111,9 @@
     }
   }
 
-  // &__btn {
-  //   display: block;
-  //   max-width: 260px;
-  //   @include m500;
-  // }
-
   &__button {
     text-align: center;
+    @include m500;
   }
 
   .menu {
