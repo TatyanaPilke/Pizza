@@ -8,49 +8,51 @@
   <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css">
   <link rel="stylesheet" href="css/libs.min.css">
   <link rel="stylesheet" href="css/style.min.css">
+  
 </head>
 <body>
   <div class="page">
+    
  <!-- start HEADER  -->
 
  <header class="header" style="background-image: url(images/bg-header.jpg);">
-   <div class="header__inner">
-     <div class="header__top d-flex f-jcsb f-aic">
-       <a class="header__logo" href="#">
-         <img src="images/icon/Logo.svg" alt="logo">
-       </a>
-       <div class="header__menu d-flex f-aic">
-         <nav class="menu">
-           <ul class="menu__list">
-             <li class="menu__item">
-               <a class="menu__link" href="#">Главная</a>
-             </li>
-             <li class="menu__item">
-               <a class="menu__link" href="#">О нас</a>
-             </li>
-             <li class="menu__item">
-               <a class="menu__link" href="#">Меню</a>
-             </li>
-             <li class="menu__item">
-               <a class="menu__link" href="#">Блог</a>
-             </li>
-           </ul>
-         </nav>
-         <a class="header__order" href="#">Заказать</a>
-         <button class="header__magnifier"><span class="icon-search"></span></button>
-       </div>
+   <div class="header__top d-flex f-jcsb f-aic">
+     <a class="logo" href="#">
+       <img class="logo__img" src="images/icon/Logo.svg" alt="logo">
+     </a>
+     <div class="header__menu d-flex f-aic">
+       <nav class="menu">
+         <ul class="menu__list">
+           <li class="menu__item">
+             <a class="menu__link" href="#">О нас</a>
+           </li>
+           <li class="menu__item">
+             <a class="menu__link" href="#">Блог</a>
+           </li>
+           <li class="menu__item">
+             <a class="menu__link" href="#">Меню</a>
+           </li>
+           <li class="menu__item">
+             <a class="menu__link" href="#">Контакты</a>
+           </li>
+         </ul>
+       </nav>
+       <a class="header__order" href="#">Заказать</a>
+       <button class="header__magnifier"><span class="icon-search"></span></button>
      </div>
-     <div class="header__title-content">
+   </div>
+   <div class="header__title-content">
+     <div class="header__txt-content">
        <span class="header__txt">Пицца - наше всё!</span>
-       <h1 class="header__title">
-         Pizza pashion
-       </h1>
-       <h3 class="header__subtitle">
-         Cooking Sinse
-       </h3>
-       <div class="header__button">
-         <a class="header__btn btn" href="#">Смотреть меню</a>
-       </div>
+     </div>
+     <h1 class="header__title">
+       Pizza pashion
+     </h1>
+     <h3 class="header__subtitle">
+       Cooking Sinse
+     </h3>
+     <div class="header__button">
+       <a class="header__btn btn" href="#">Смотреть меню</a>
      </div>
    </div>
  </header>
@@ -67,7 +69,7 @@
       <div class="swiper-wrapper">
 
         <div class="swiper-slide d-flex f-jcsb">
-          <div class="cook__box">
+          <div class="cook__box" data-aos="fade-right">
             <h2 class="cook__title title">
               <span class="title-yellow">Наши </span>пиццамейкеры
             </h2>
@@ -78,18 +80,20 @@
                 <span class="cook__specialty">шеф-повар</span>
               </div>
             </div>
-            <p class="cook__txt">Моя кухня - монолог, а не коллективное творчество!</p>
-            <p class="cook__text" data-simplebar>Любая еда может рассказать историю, но жанр в этой истории всегда будет определять
-              шеф-повар. То, что журналисты и гастрономические критики привыкли называть nouvelle cuisine (в пер. с
-              фр.
-              «новая
-              кухня». — Прим. ред.), я называю «кухня артиста». Повар стремится показать свои новые представления, о
-              которых
-              никто раньше не думал, но такая еда очень непонятна для обычных неискушенных людей. И совершенно другое
-              —
-              «древняя кухня», рецепты и техники, которые пришли к нам от мам, бабушек, прабабушек и так далее.</p>
-          </div>
-          <div class="cook__box-img">
+              <p class="cook__txt">Моя кухня - монолог, а не коллективное творчество!</p>
+              <p class="cook__text" data-simplebar>Любая еда может рассказать историю, но жанр в этой истории всегда
+                будет
+                определять
+                шеф-повар. То, что журналисты и гастрономические критики привыкли называть nouvelle cuisine (в пер. с
+                фр.
+                «новая
+                кухня». — Прим. ред.), я называю «кухня артиста». Повар стремится показать свои новые представления, о
+                которых
+                никто раньше не думал, но такая еда очень непонятна для обычных неискушенных людей. И совершенно другое
+                —
+                «древняя кухня», рецепты и техники, которые пришли к нам от мам, бабушек, прабабушек и так далее.</p>
+            </div>
+          <div class="cook__box-img"  data-aos="fade-left">
             <img class="cook__img" src="images/cook1.jpg" alt="Our best pizza maker">
           </div>
         </div>
@@ -135,7 +139,7 @@
           <div class="cook__box-img">
             <img class="cook__img" src="images/cook1.jpg" alt="Our best pizza maker">
           </div>
-      </div>
+        </div>
         <div class="swiper-slide d-flex f-jcsb">
           <div class="cook__box">
             <h2 class="cook__title title">
@@ -149,7 +153,8 @@
               </div>
             </div>
             <p class="cook__txt">Моя кухня - монолог, а не коллективное творчество!</p>
-            <p class="cook__text" data-simplebar>Любая еда может рассказать историю, но жанр в этой истории всегда будет определять
+            <p class="cook__text" data-simplebar>Любая еда может рассказать историю, но жанр в этой истории всегда будет
+              определять
               шеф-повар. То, что журналисты и гастрономические критики привыкли называть nouvelle cuisine (в пер. с
               фр.
               «новая
@@ -170,28 +175,6 @@
 </section>
 
 <!--end section COOK  -->
-  <!-- start section GALLERY  -->
-
-<section class="gallery">
-  <h2 class="gallery__title title">
-    <span class="title-yellow">Наша </span>галерея
-  </h2>
-  <p class="gallery__text">Может ли еда быть искусством ? Может ли повар когда-либо претендовать на звание художника
-    наравне с Микеланджело, Леонардо и Ван Гогом. Наши шеф-повара, производят революцию в мире кулинарии!</p>
-  <div class="gallery__inner d-flex">
-    <div class="gallery__image" style="background-image: url(images/1.jpg);"></div>
-    <div class="gallery__image" style="background-image: url(images/2.jpg);"></div>
-    <div class="gallery__image" style="background-image: url(images/3.jpg);"></div>
-    <div class="gallery__image" style="background-image: url(images/4.jpg);"></div>
-    <div class="gallery__image" style="background-image: url(images/5.jpg);"></div>
-    <div class="gallery__image" style="background-image: url(images/6.jpg);"></div>
-    <div class="gallery__image" style="background-image: url(images/7.jpg);"></div>
-    <div class="gallery__image" style="background-image: url(images/8.jpg);"></div>
-    <div class="gallery__image" style="background-image: url(images/9.jpg);"></div>
-    <div class="gallery__image" style="background-image: url(images/10.jpg);"></div>
-  </div>
-</section>
-<!-- end section GALLERY -->
   <!-- start section SERVICE  -->
 
 <section class="service">
@@ -200,34 +183,40 @@
     <h2 class="service__title title">
       <span class="title-yellow">Наш </span>Сервис
     </h2>
+    <div class="service__anim">
     <p class="service__text text">
-      Может ли еда быть искусством ? Может ли повар когда-либо претендовать на звание художника наравне с Микеланджело,
-      Леонардо и Ван Гогом. Наши шеф-повара, производят революцию в мире кулинарии!
+      Клиент – это самый важный посетитель. Не он зависит от нас. Мы зависим от него.
+      Он не прерывает нашу работу. Он – цель нашей работы. Он не по ту сторону нашего бизнеса.
+      Он – его часть.
+      Мы не делаем ему одолжение, обслуживая его. Он делает нам одолжение, давая возможность это сделать.
     </p>
+  </div>
     <div class="service__inner d-flex f-jcsb">
-      <div class="service__box" style="background-image: url(images/icon/coffe.png);">
+      <div class="service__box" data-aos-delay="100" data-aos="fade-up" style="background-image: url(images/icon/coffe.png);">
         <span class="service__meal">Завтрак</span>
         <p class="service__text-md">
-          Культ вокруг завтрака — это не только бесконечные фото яичниц с авокадо, сырников с ягодами, гранолы с молоком
+          Культ вокруг завтрака — это не только бесконечные фото яичниц с авокадо, сырников с ягодами, гранолы с
+          молоком
           и каш с фруктовой посыпкой. Это еще и устоявшееся мнение, что именно завтрак — это главный прием пищи в
           течение дня.
         </p>
       </div>
-      <div class="service__box service__box--launch" style="background-image: url(images/icon/launch.png);">
+      <div class="service__box service__box--launch" data-aos-delay="300" data-aos="fade-up" style="background-image: url(images/icon/launch.png);">
         <span class="service__meal">Ланч</span>
         <p class="service__text-md">
           Ланч, как правило, это быстрый перекус между завтраком и обедом. Если время и условия ограничены — работа в
           офисе, жестко нормированный рабочий день, тогда вам обязательно нужно сделать легкий перекус. У нас вкусно!
         </p>
       </div>
-      <div class="service__box service__box--dinner1" style="background-image: url(images/icon/dinner1.png);">
+      <div class="service__box service__box--dinner1" data-aos-delay="500" data-aos="fade-up" style="background-image: url(images/icon/dinner1.png);">
         <span class="service__meal">Обед</span>
         <p class="service__text-md">
-          Обед — самое время пополнить запасы энергии на вторую половину дня. К обеду отлично подойдут как первые, так и
+          Обед — самое время пополнить запасы энергии на вторую половину дня. К обеду отлично подойдут как первые, так
+          и
           вторые блюда, салаты, закуски.
         </p>
       </div>
-      <div class="service__box service__box--dinner2" style="background-image: url(images/icon/dinner2.png);">
+      <div class="service__box service__box--dinner2" data-aos-delay="700" data-aos="fade-up" style="background-image: url(images/icon/dinner2.png);">
         <span class="service__meal">Ужин</span>
         <p class="service__text-md">
           Ужин — время поддержать организм, но тут главное не перестараться. Ужин обязательно должен быть белковым,
@@ -239,6 +228,106 @@
 </section>
 
 <!-- end section SERVICE  -->
+  <!-- start section GALLERY  -->
+
+<section class="gallery">
+  <h2 class="gallery__title title">
+    <span class="title-yellow">Наша </span>галерея
+  </h2>
+  <p class="gallery__text">Может ли еда быть искусством ? Может ли повар когда-либо претендовать на звание художника
+    наравне с Микеланджело, Леонардо и Ван Гогом. Наши шеф-повара, производят революцию в мире кулинарии!</p>
+  <div class="gallery__inner d-flex">
+
+    <figure class="images" data-aos="new-animation" data-aos-delay="50" data-aos-duration="500">
+      <img class="images__img" src="images/1.jpg" alt="#">
+      <figcaption class="images__figcaption">
+        <h3 class="images__title">Пицца "Пеперонни"</h3>
+        <p class="images__text">Кр.соус, сыр, салями, бекон, ветчина, чери, перец, специи.</p>
+      </figcaption>
+      <a class="images__link" href="#"></a>
+    </figure>
+
+    <figure class="images" data-aos="new-animation" data-aos-delay="200" data-aos-duration="500">
+      <img class="images__img" src="images/2.jpg" alt="#">
+      <figcaption class="images__figcaption">
+        <h3 class="images__title">Рис по японски</h3>
+        <p class="images__text">Рис, овощи, специи.</p>
+      </figcaption>
+      <a class="images__link" href="#"></a>
+    </figure>
+    
+    <figure class="images" data-aos="new-animation" data-aos-delay="350" data-aos-duration="500">
+      <img class="images__img" src="images/3.jpg" alt="#">
+      <figcaption class="images__figcaption">
+        <h3 class="images__title">Овощной суп</h3>
+        <p class="images__text">Куриное филе, картофель, морковь, горох, броколли, болг.перец, специи.</p>
+      </figcaption>
+      <a class="images__link" href="#"></a>
+    </figure>
+    <figure class="images" data-aos="new-animation" data-aos-delay="500" data-aos-duration="500">
+      <img class="images__img" src="images/4.jpg" alt="#">
+      <figcaption class="images__figcaption">
+        <h3 class="images__title">Пицца "Карбонара"</h3>
+        <p class="images__text">Соус, сыр, бекон, перец.болг.,рукола, желток, специи.</p>
+      </figcaption>
+      <a class="images__link" href="#"></a>
+    </figure>
+    
+    <figure class="images" data-aos="new-animation" data-aos-delay="650" data-aos-duration="500">
+      <img class="images__img" src="images/5.jpg" alt="#">
+      <figcaption class="images__figcaption">
+        <h3 class="images__title">Рис с говядиной</h3>
+        <p class="images__text">Рис, говядина, яйца, помидоры, зеленый лук, специи.</p>
+      </figcaption>
+      <a class="images__link" href="#"></a>
+    </figure>
+
+    <figure class="images" data-aos="new-animation" data-aos-delay="800" data-aos-duration="500">
+      <img class="images__img" src="images/6.jpg" alt="#">
+      <figcaption class="images__figcaption">
+        <h3 class="images__title">Свинной стейк + картофель "Фри"</h3>
+        <p class="images__text">Свинина, картофель, сметанный или чесночный соус, специи</p>
+      </figcaption>
+      <a class="images__link" href="#"></a>
+    </figure>
+    
+    <figure class="images" data-aos="new-animation" data-aos-delay="950" data-aos-duration="500">
+      <img class="images__img" src="images/7.jpg" alt="#">
+      <figcaption class="images__figcaption">
+        <h3 class="images__title">Холодное капучино</h3>
+        <p class="images__text">Кофе, подогретое молоко, кусочки чёрного шоколада.</p>
+      </figcaption>
+      <a class="images__link" href="#"></a>
+    </figure>
+    
+    <figure class="images" data-aos="new-animation" data-aos-delay="1100" data-aos-duration="500">
+      <img class="images__img" src="images/8.jpg" alt="#">
+      <figcaption class="images__figcaption">
+        <h3 class="images__title">Картофель по-домашнему</h3>
+        <p class="images__text">Запеченная говядина, картофель, помидоры, специи, соус.</p>
+      </figcaption>
+      <a class="images__link" href="#"></a>
+    </figure>
+    <figure class="images" data-aos="new-animation" data-aos-delay="1250" data-aos-duration="500">
+      <img class="images__img" src="images/9.jpg" alt="#">
+      <figcaption class="images__figcaption">
+        <h3 class="images__title">Оладьи с мёдом</h3>
+        <p class="images__text">Мука, кефир, яйца, сахар, мёд.</p>
+      </figcaption>
+      <a class="images__link" href="#"></a>
+    </figure>
+    
+    <figure class="images" data-aos="new-animation" data-aos-delay="1400" data-aos-duration="500">
+      <img class="images__img" src="images/10.jpg" alt="#">
+      <figcaption class="images__figcaption">
+        <h3 class="images__title">Донер кебаб</h3>
+        <p class="images__text">Говядина, листовый салат, картофель, перец, соус, специи.</p>
+      </figcaption>
+      <a class="images__link" href="#"></a>
+    </figure>
+  </div>
+</section>
+<!-- end section GALLERY -->
   <!-- start section PIZZA  -->
 
 <section class="pizza">
@@ -247,7 +336,7 @@
       <span class="title-yellow">Наши </span>пиццы
     </h2>
     <div class="pizza__inner d-flex f-jcsb">
-      <ul class="pizza__list">
+      <ul class="pizza__list" data-aos="fade-right">
         <li class="pizza__item">
           <span class="pizza__name">Маргарита</span>
           <div class="pizza__ingredients d-flex f-jcsb">
@@ -304,7 +393,7 @@
           </div>
         </li>
       </ul>
-      <ul class="pizza__list pizza__list--right">
+      <ul class="pizza__list pizza__list--right" data-aos="fade-left">
         <li class="pizza__item">
           <span class="pizza__name">Маргарита</span>
           <div class="pizza__ingredients d-flex f-jcsb">
@@ -363,20 +452,99 @@
       </ul>
     </div>
     <div class="pizza__button">
-      <a class="pizza__btn btn" href="#">Смотреть меню</a>
+      <a class="pizza__btn btn" href="#">Сделать заказ</a>
     </div>
-  </div>
   </div>
 </section>
 <!-- end section PIZZA  -->
   <!-- start section MAP  -->
 
 <section class="map">
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3017.811714986337!2d30.507736963806575!3d50.50315413844773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d21b36434d63%3A0xeb64c1f3c849f044!2z0L_RgNC-0YHQvy4g0JPQtdGA0L7QtdCyINCh0YLQsNC70LjQvdCz0YDQsNC00LAsIDE3LCDQmtC40LXQsiwgMDIwMDA!5e0!3m2!1sru!2sua!4v1617193034490!5m2!1sru!2sua" width="100%" height="584" style="border:0;" allowfullscreen="" loading="lazy">
-  </iframe>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2537.664912188989!2d30.50830941596148!3d50.503193979482745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d21b36434d63%3A0xeb64c1f3c849f044!2z0L_RgNC-0YHQvy4g0JPQtdGA0L7QtdCyINCh0YLQsNC70LjQvdCz0YDQsNC00LAsIDE3LCDQmtC40LXQsiwgMDIwMDA!5e0!3m2!1sru!2sua!4v1617194810068!5m2!1sru!2sua" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 </section>
 
 <!-- end section MAP  -->
+  <!-- start section FOOTER  -->
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__inner d-flex f-jcsb">
+      <div class="footer__column">
+        <a class="logo" href="#">
+          <img class="logo__img footer__img" src="images/icon/Logo.svg" alt="logo">
+        </a>
+        <span class="footer__label">pizza pachion</span>
+        <address class="footer__address">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#" class="footer__link"><span class="footer__icon icon-facebook"></span></a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link"><span class="footer__icon icon-twitter"></span></a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link"><span class="footer__icon icon-instagram"></span></a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link"><span class="footer__icon icon-dribbble"></span></a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link"><span class="footer__icon icon-google-plus"></span></a>
+            </li>
+          </ul>
+        </address>
+      </div>
+      <form class="footer-form" action="#" method="post" data-aos="fade-up">
+        <h3 class="footer-form__title title">
+          <span class="title-yellow">Форма </span> связи
+          </h2>
+        </h3>
+        <label class="footer-form__label">
+          <input class="footer-form__input" type="text" placeholder="Ваше имя *" required>
+        </label>
+        <label class="footer-form__label">
+          <input class="footer-form__input" type="email" placeholder="Email">
+        </label>
+        <label class="footer-form__label">
+          <input class="footer-form__input" type="tel" placeholder="Телефон *" required>
+        </label>
+        <textarea class="footer-form__input footer-form__textarea" placeholder="Сообщение"></textarea>
+        <button class="footer-form__btn btn" name="submit" type="submit">Отправить</button>
+      </form>
+      <div class="footer__column">
+        <ul class="footer__contact">
+          <li class="footer__contact-item">
+            <a class="footer__contact-link" href="#">
+              <span class="footer__icon icon-map-marker"></span>
+              <span class="footer__contact-city">Киев</span>
+              <span class="footer__contact-city">
+                ул. Героев Сталинграда, 17
+              </span>
+            </a>
+          </li>
+          <li class="footer__contact-item">
+            <span class="footer__icon icon-mobile"></span>
+            <a class="footer__contact-link" href="tel:+380445555657">
+              +38 044 555 56 57
+            </a>
+            <a class="footer__contact-link" href="tel:+380445555660">
+              +38 044 555 56 60
+            </a>
+          </li>
+          <li class="footer__contact-item">
+            <span class="footer__icon icon-envelope-o"></span>
+            <a class="footer__contact-link" href="mailto:PizzaPashion.com">
+              PizzaPashion.com
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- end section FOOTER  -->
 
 </main>
 
@@ -394,9 +562,10 @@
 
 
 </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script> 
-  <script src="js/libs.min.js"></script>
-  <script src="js/main.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+<script src="js/libs.min.js"></script>
+<script src="js/main.js"></script>
 </body>
+
 </html>

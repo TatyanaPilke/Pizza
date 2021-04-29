@@ -9,6 +9,7 @@
   "author": "Tatyana Pilke",
   "license": "ISC",
   "devDependencies": {
+    "aos": "^2.3.4",
     "browser-sync": "^2.26.13",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",

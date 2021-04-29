@@ -27,6 +27,8 @@ gulp.task('style', function () {
   return gulp.src([
       'node_modules/normalize.css/normalize.css',
       'node_modules/swiper/swiper-bundle.css',
+      'node_modules/aos/dist/aos.css'
+      
     ])
     .pipe(concat('libs.min.css'))
     .pipe(cssmin())
@@ -38,6 +40,7 @@ gulp.task('script', function () {
   return gulp.src([
       'node_modules/magnific-popup/dist/jquery.magnific-popup.js',
       'node_modules/swiper/swiper-bundle.js',
+      'node_modules/aos/dist/aos.js'
     ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())

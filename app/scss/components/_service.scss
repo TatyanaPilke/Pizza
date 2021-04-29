@@ -6,9 +6,10 @@
 
   &__span {
     position: absolute;
-    top: -250px;
+    top: 45px;
+    left: 10%;
     padding: 0;
-    font-size: calc(200px + 600 * ((100vw - 320px) / (1920 - 320)));
+    font-size: calc(200px + 400 * ((100vw - 320px) / (1920 - 320)));
     transform: rotate(-15deg);
     z-index: 1;
     opacity: 0.05;
@@ -57,4 +58,13 @@
     color: $black;
     line-height: 32px;
   }
+
+  [data-aos="new-animation"] {
+    transform: rotate(0);
+  }
+
+  [data-aos="new-animation"].aos-animate {
+    transform: rotate(360deg);
+  }
+
 }

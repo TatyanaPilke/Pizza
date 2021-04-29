@@ -17,16 +17,10 @@
     opacity: 0.7;
   }
 
-  &__inner {
-    margin: 0 20px;
+  &__top {
+    z-index: 4;
+    margin-top: 20px;
     position: relative;
-    z-index: 2;
-    padding: 20px 0 160px;
-  }
-
-  &__logo {
-    width: 180px;
-    height: 80px;
   }
 
   &__order {
@@ -47,34 +41,120 @@
 
   &__title-content {
     text-align: center;
-    margin-top: 180px;
+    position: relative;
+    padding: 125px 0 200px;
     z-index: 3;
   }
 
   &__txt {
+    white-space: nowrap;
+    display: inline-block;
     color: $yellow;
     font-size: 26px;
     font-family: 'Pacifico';
-    padding: 10px 30px;
-    background-color: rgba(255, 255, 255, 0.57);
-    margin-bottom: 35px;
+    padding: 10px 20px;
+    background-color: $white;
+
+    &:after,
+    &:before {
+      content: '';
+      border-style: solid;
+      border-width: 30px 27px 0 27px;
+      border-color: #ffffff transparent transparent transparent;
+      position: absolute;
+      top: 24px;
+      z-index: -1;
+    }
+
+    &:after {
+      right: -34px;
+    }
+
+    &:before {
+      left: -34px;
+    }
+  }
+
+  &__txt-content {
+    position: relative;
+    display: inline-block;
+    opacity: 0;
+    animation: anim1 1s ease 2.5s forwards;
+    @include transition-all;
+
+    @keyframes anim1 {
+      0% {
+        top: -100px;
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+        top: 0;
+      }
+    }
+
+    &:after,
+    &:before {
+      content: '';
+      border-style: solid;
+      border-width: 30px 30px 0 30px;
+      border-color: #ffffff transparent transparent transparent;
+      transform: rotate(-180deg);
+      position: absolute;
+      top: 32px;
+      z-index: -1;
+    }
+
+    &:after {
+      right: -45px;
+    }
+
+    &:before {
+      left: -45px;
+    }
   }
 
   &__title {
-    font-family: 'Rye', sans-serif;
     text-transform: uppercase;
-    font-size: calc(56px + 40 * ((100vw - 320px) / (1280 - 320)));
-    color: $white;
-    margin-bottom: 15px;
+    margin: 60px 0 0 0;
+    opacity: 0;
+    animation: title 1.5s ease 1s forwards;
+    @include transition-all;
+    @include adaptiv-font (96, 56);
+    @include fontRye;
+
+    @keyframes title {
+      0% {
+        transform: scale(0);
+        opacity: 0;
+      }
+      100% {
+        transform: scale(1, 1);
+        opacity: 1;
+      }
+    }
   }
 
   &__subtitle {
-    font-family: 'Arizonia';
-    font-size: calc(36px + 28 * ((100vw - 320px) / (1920 - 320)));
-    color: $white;
-    margin: 0 0 100px;
-    position: relative;
+    @include adaptiv-font (64, 36);
+    margin: 0 0 80px;
     display: inline-block;
+    position: relative;
+    opacity: 0;
+    animation: subtitle 1.2s ease 1s forwards;
+    @include fontArisonia;
+    @include transition-all;
+
+    @keyframes subtitle {
+      0% {
+        transform: translateY(100px);
+        opacity: 0;
+      }
+      100% {
+        transform: translate(0px, 0px);
+        opacity: 1;
+      }
+    }
 
     &:after,
     &:before {
@@ -84,7 +164,7 @@
       background-repeat: no-repeat;
       width: 42px;
       height: 42px;
-      top: 25px;
+      top: 36px;
     }
 
     &:before {
@@ -96,7 +176,26 @@
     }
   }
 
-  &__magnifier {
+  &__button {
+    text-align: center;
+    opacity: 0;
+    animation: btn 1.2s ease 2s forwards;
+    @include transition-all;
+    @include m500;
+
+    @keyframes btn {
+      0% {
+        transform: translateY(100px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0px, 0px);
+        opacity: 1;
+      }
+    }
+  }
+
+    &__magnifier {
     position: relative;
     border: transparent;
     background-color: transparent;
@@ -109,11 +208,6 @@
     &:hover {
       color: $yellow;
     }
-  }
-
-  &__button {
-    text-align: center;
-    @include m500;
   }
 
   .menu {

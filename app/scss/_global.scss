@@ -9,12 +9,6 @@ html {
   box-sizing: inherit;
 }
 
-
-html,
-body {
-  height: 100%;
-}
-
 body {
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
@@ -51,6 +45,7 @@ a {
 
 ul {
   list-style: none;
+  padding: 0;
 }
 
 .d-flex {
@@ -81,12 +76,18 @@ ul {
   background-color: $yellow;
   font-size: 22px;
   margin: 0 auto;
+  border: transparent;
+  outline: transparent;
   color: $black;
   padding: 15px 30px;
   border-radius: 5px;
 
+  &:focus {
+    background-color: rgb(241, 217, 137);
+  }
+
   &:hover {
-    opacity: 0.6;
+    background-color: rgb(245, 211, 137);
   }
 }
 
@@ -102,4 +103,5 @@ ul {
 .title-yellow {
   color: $yellow;
 }
+
 
