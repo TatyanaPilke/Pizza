@@ -57,3 +57,15 @@ $(document).ready(function () {
 });
 
 // end  Anchor links in header
+
+// start header-burger 
+$(function () {
+  $('.header__burger').on('click', function () {
+    $('.menu').slideToggle();
+  });
+
+  document.querySelector('.header__burger').onclick = function () {
+    this.classList.toggle('header__active');
+  }
+});
+// end header-burger 
