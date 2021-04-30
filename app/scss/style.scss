@@ -3,13 +3,12 @@
 @import 'global';
 @import 'mixins';
 
-
 @import 'components/_header';
 @import 'components/_logo';
-@import 'components/_cook';
-@import 'components/_gallery';
-@import 'components/_service';
 @import 'components/_pizza';
 @import 'components/_map';
 @import 'components/_footer';
 @import 'components/_form';
+
+@import 'page-index.scss';
+@import 'page-menu.scss';

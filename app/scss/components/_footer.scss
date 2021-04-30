@@ -26,14 +26,37 @@
     margin-left: 25px;
   }
 
+  &__contact-item {
+    margin-bottom: 20px;
+    position: relative;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &:hover .footer__icon {
+      opacity: 1;
+    }
+  }
+
   &__icon {
-    font-family: 'icomoon';
+    font-family: 'icomoon' !important;
     color: $white;
     opacity: 0.3;
     font-size: 20px;
 
     &:hover {
       opacity: 1;
+    }
+
+    &--position {
+      position: absolute;
+      left: -30px;
+      top: 10px;
+    }
+
+    &--top {
+      top: 0;
     }
   }
 
@@ -55,9 +78,5 @@
     &:hover {
       opacity: 1;
     }
-  }
-
-  &__contact-item {
-    margin-bottom: 20px;
   }
 }

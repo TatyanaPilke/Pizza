@@ -16,56 +16,29 @@
  <!-- start HEADER  -->
 
  <header class="header" style="background-image: url(images/bg-header.jpg);">
-<<<<<<< HEAD
+
    <div class="header__top d-flex f-jcsb f-aic">
      <a class="logo" href="#">
        <img class="logo__img" src="images/icon/Logo.svg" alt="logo">
      </a>
      <div class="header__menu d-flex f-aic">
-       <nav class="menu">
+       <nav class="menu" id="header-menu">
          <ul class="menu__list">
            <li class="menu__item">
-             <a class="menu__link" href="#">О нас</a>
+             <a class="menu__link" href="#about">О нас</a>
            </li>
            <li class="menu__item">
-             <a class="menu__link" href="#">Блог</a>
+             <a class="menu__link" href="#service">Сервис</a>
            </li>
            <li class="menu__item">
-             <a class="menu__link" href="#">Меню</a>
+             <a class="menu__link" href="#menu">Меню</a>
            </li>
            <li class="menu__item">
-             <a class="menu__link" href="#">Контакты</a>
+             <a class="menu__link" href="#form">Контакты</a>
            </li>
          </ul>
        </nav>
-       <a class="header__order" href="#">Заказать</a>
-       <button class="header__magnifier"><span class="icon-search"></span></button>
-=======
-   <div class="header__inner">
-     <div class="header__top d-flex f-jcsb f-aic">
-       <a class="header__logo" href="#">
-         <img src="images/icon/Logo.svg" alt="logo">
-       </a>
-       <div class="header__menu d-flex f-aic">
-         <nav class="menu">
-           <ul class="menu__list">
-             <li class="menu__item">
-               <a class="menu__link" href="#">Главная</a>
-             </li>
-             <li class="menu__item">
-               <a class="menu__link" href="#">О нас</a>
-             </li>
-             <li class="menu__item">
-               <a class="menu__link" href="#">Меню</a>
-             </li>
-             <li class="menu__item">
-               <a class="menu__link" href="#">Блог</a>
-             </li>
-           </ul>
-         </nav>
-         <a class="header__order" href="#">Заказать</a>
-       </div>
->>>>>>> eef2cf92cf51021b7e2479bb0a3b76bda9d489f2
+       <a class="header__order" href="#form"><span class="hidden">Search product here</span>Заказать</a>
      </div>
    </div>
    <div class="header__title-content">
@@ -79,18 +52,17 @@
        Cooking Sinse
      </h3>
      <div class="header__button">
-       <a class="header__btn btn" href="#">Смотреть меню</a>
+       <a class="header__btn btn" href="menu.html">Смотреть меню</a>
      </div>
    </div>
  </header>
 
  <!-- end HEADER  -->
 
-
 <main class="main">
   <!--start section COOK  -->
 
-<section class="cook">
+<section class="cook" id="about">
   <div class="cook__inner">
     <div class="swiper-container">
       <div class="swiper-wrapper">
@@ -204,7 +176,7 @@
 <!--end section COOK  -->
   <!-- start section SERVICE  -->
 
-<section class="service">
+<section class="service" id="service">
   <span class="service__span title">Pizza</span>
   <div class="container">
     <h2 class="service__title title">
@@ -357,7 +329,7 @@
 <!-- end section GALLERY -->
   <!-- start section PIZZA  -->
 
-<section class="pizza">
+<section class="pizza" id="menu">
   <div class="container">
     <h2 class="pizza__title title">
       <span class="title-yellow">Наши </span>пиццы
@@ -479,7 +451,7 @@
       </ul>
     </div>
     <div class="pizza__button">
-      <a class="pizza__btn btn" href="#">Сделать заказ</a>
+      <a class="pizza__btn btn" href="#form">Сделать заказ</a>
     </div>
   </div>
 </section>
@@ -493,7 +465,7 @@
 <!-- end section MAP  -->
   <!-- start section FOOTER  -->
 
-<footer class="footer">
+<footer class="footer" id="form">
   <div class="container">
     <div class="footer__inner d-flex f-jcsb">
       <div class="footer__column">
@@ -516,12 +488,12 @@
               <a href="#" class="footer__link"><span class="footer__icon icon-dribbble"></span></a>
             </li>
             <li class="footer__item">
-              <a href="#" class="footer__link"><span class="footer__icon icon-google-plus"></span></a>
+              <a href="#" class="footer__link"><span class="footer__icon icon-google"></span></a>
             </li>
           </ul>
         </address>
       </div>
-      <form class="footer-form" action="#" method="post" data-aos="fade-up">
+      <form class="footer-form" action="#" method="post" data-aos="fade-up" id="contact">
         <h3 class="footer-form__title title">
           <span class="title-yellow">Форма </span> связи
           </h2>
@@ -541,16 +513,14 @@
       <div class="footer__column">
         <ul class="footer__contact">
           <li class="footer__contact-item">
-            <a class="footer__contact-link" href="#">
-              <span class="footer__icon icon-map-marker"></span>
+              <span class="footer__icon footer__icon--position icon-map-marker"></span>
               <span class="footer__contact-city">Киев</span>
               <span class="footer__contact-city">
                 ул. Героев Сталинграда, 17
               </span>
-            </a>
           </li>
           <li class="footer__contact-item">
-            <span class="footer__icon icon-mobile"></span>
+            <span class="footer__icon footer__icon--position icon-phone"></span>
             <a class="footer__contact-link" href="tel:+380445555657">
               +38 044 555 56 57
             </a>
@@ -559,7 +529,7 @@
             </a>
           </li>
           <li class="footer__contact-item">
-            <span class="footer__icon icon-envelope-o"></span>
+            <span class="footer__icon footer__icon--position footer__icon--top icon-envelope"></span>
             <a class="footer__contact-link" href="mailto:PizzaPashion.com">
               PizzaPashion.com
             </a>
@@ -574,19 +544,6 @@
 <!-- end section FOOTER  -->
 
 </main>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

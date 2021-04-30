@@ -17,8 +17,8 @@ var swiper = new Swiper('.swiper-container', {
 
 // end SWIPER
 
-// You can also pass an optional settings object
-// below listed default settings
+
+// start animation AOS 
 AOS.init({
   // Global settings:
   disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
@@ -28,7 +28,7 @@ AOS.init({
   useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
   disableMutationObserver: false, // disables automatic mutations' detections (advanced)
   debounceDelay: 100, // the delay on debounce used while resizing window (advanced)
-  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+  throttleDelay: 0, // the delay on throttle used while scrolling the page (advanced)
   
 
   // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
@@ -39,5 +39,21 @@ AOS.init({
   once: true, // whether animation should happen only once - while scrolling down
   mirror: false, // whether elements should animate out while scrolling past them
   anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
-
 });
+
+// end animation AOS 
+
+// start Anchor links in header
+
+$(document).ready(function () {
+  $("#header-menu").on("click", "a", function (event) {
+    event.preventDefault();
+    var id = $(this).attr('href'),
+      top = $(id).offset().top;
+    $('body,html').animate({
+      scrollTop: top
+    }, 1500);
+  });
+});
+
+// end  Anchor links in header
