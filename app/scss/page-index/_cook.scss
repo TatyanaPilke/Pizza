@@ -9,6 +9,15 @@
      max-width: 730px;
      width: 100%;
      padding: 60px 75px 85px 100px;
+
+     @include r($desktop) {
+       padding-right: 10px;
+       max-width: 630px;
+     }
+
+     @include r($tablet) {
+       padding: 60px 30px 85px;
+     }
    }
 
    &__title {
@@ -17,6 +26,10 @@
 
    &__profile {
      margin-bottom: 60px;
+
+     @include r($tablet) {
+       padding-left: 20px;
+     }
    }
 
    &__photo {
@@ -38,6 +51,10 @@
    &__txt {
      font-size: 20px;
      margin-bottom: 35px;
+
+     @include r($tablet) {
+       padding-left: 20px;
+     }
    }
 
    &__text {
@@ -49,6 +66,10 @@
      padding-right: 30px;
      max-height: 270px;
      min-height: 150px;
+
+     @include r($tablet) {
+       padding-left: 20px;
+     }
    }
 
    .simplebar-scrollbar:before {
@@ -61,6 +82,10 @@
      max-height: 800px;
      padding: 20px;
      margin: 0;
+
+     @include r($tablet) {
+       padding: 0;
+     }
    }
 
    &__img {
@@ -76,6 +101,12 @@
 
    .swiper-slide {
      background-color: #fff;
+
+     @include r($tablet) {
+       display: flex;
+       flex-direction: column-reverse;
+       align-items: center;
+     }
    }
 
    .swiper-button-next,
@@ -84,13 +115,55 @@
      width: calc(var(--swiper-navigation-size)/ 20 * 25);
      height: var(--swiper-navigation-size);
      color: $yellow;
+
+     @include r($tablet) {
+       top: 96%;
+     }
    }
 
    .swiper-button-prev {
      left: 22%;
+
+     @media (max-width: 1400px) {
+       left: 30%;
+     }
+
+     @include r($tablet) {
+       left: 45%;
+       transform: translate(-62%, -50%);
+     }
+
+     @include r($tablet-large) {
+       left: 40%;
+       transform: translate(-45%, -50%);
+     }
+
+     @include r($mobile) {
+      left: 35%;
+      transform: translate(-35%, -50%);
+    }
    }
 
    .swiper-button-next {
      right: 72%;
+
+     @media (max-width: 1400px) {
+       right: 62%;
+     }
+
+     @include r($tablet) {
+       right: 45%;
+       transform: translate(-62%, -50%);
+     }
+
+     @include r($tablet-large) {
+       right: 40%;
+       transform: translate(-45%, -50%);
+     }
+
+     @include r($mobile) {
+      right: 35%;
+      transform: translate(-35%, -50%);
+    }
    }
  }

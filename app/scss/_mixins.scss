@@ -51,11 +51,11 @@
 }
 
 @mixin text {
-  font-size: 24px;
   font-weight: 400;
   text-align: center;
   line-height: 36px;
   text-align: center;
+  @include adaptiv-font (24, 18);
 }
 
 @mixin zerroPadding{

@@ -3,6 +3,23 @@
   padding: 65px 0 150px;
   position: relative;
 
+  @include r ($tablet) {
+    padding-bottom: 70px;
+  }
+
+  &__inner {
+    @include r ($tablet) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__column {
+    @include r ($tablet) {
+      text-align: center;
+    }
+  }
+
   &__img {
     max-width: 179px;
     max-height: 95px;
@@ -64,7 +81,7 @@
     display: block;
     color: $white;
     opacity: 0.6;
-    
+
     &:hover {
       opacity: 1;
     }

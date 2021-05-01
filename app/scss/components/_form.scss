@@ -6,6 +6,11 @@
   border-radius: 11px;
   z-index: 3;
 
+  @include r ($tablet) {
+    order: 3;
+    margin-top: 30px;
+  }
+
   &__title {
     margin-bottom: 20px;
     text-align: center;

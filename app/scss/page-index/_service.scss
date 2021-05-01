@@ -4,6 +4,22 @@
   position: relative;
   z-index: 2;
 
+  @include r ($desktop){
+   padding-top: 10px;
+  }
+
+  &__inner {
+    @include r ($desktop){
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    @include r ($tablet-large) {
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
   &__span {
     position: absolute;
     top: 45px;
@@ -29,6 +45,15 @@
     background-repeat: no-repeat;
     background-position: top;
     background-size: 94px 109px;
+
+    @include r ($desktop){
+     max-width: 40%;
+     margin: 20px;
+    }
+
+    @include r ($tablet-large) {
+      max-width: 100%;
+    }
 
     &--launch {
       background-size: 172px 120px;
@@ -58,13 +83,4 @@
     color: $black;
     line-height: 32px;
   }
-
-  [data-aos="new-animation"] {
-    transform: rotate(0);
-  }
-
-  [data-aos="new-animation"].aos-animate {
-    transform: rotate(360deg);
-  }
-
 }

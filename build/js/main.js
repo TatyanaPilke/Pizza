@@ -21,13 +21,13 @@ var swiper = new Swiper('.swiper-container', {
 // start animation AOS 
 AOS.init({
   // Global settings:
-  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  disable: false,// accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
   startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
   initClassName: 'aos-init', // class applied after initialization
   animatedClassName: 'aos-animate', // class applied on animation
   useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
   disableMutationObserver: false, // disables automatic mutations' detections (advanced)
-  debounceDelay: 100, // the delay on debounce used while resizing window (advanced)
+  debounceDelay: 0, // the delay on debounce used while resizing window (advanced)
   throttleDelay: 0, // the delay on throttle used while scrolling the page (advanced)
   
 
@@ -67,5 +67,13 @@ $(function () {
   document.querySelector('.header__burger').onclick = function () {
     this.classList.toggle('header__active');
   }
+
+  $('.menu__item').on('click', function () {
+    $('.menu').slideToggle();
+  });
+
+  $('.menu__item').on('click', function () {
+    $('.header__burger').removeClass('header__active');
+  });
 });
 // end header-burger 
